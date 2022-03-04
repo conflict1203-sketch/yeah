@@ -1,7 +1,7 @@
-re('"pro_expired_at" : ".*"','"pro_expired_at" : "2022-12-27 23:59:59"')
+re('\"pro_expired_at\":\".{20}','"pro_expired_at" : "2022-12-27 23:59:59"')
 
 function re() {
-    var body = $response.body;;
+    var body = $response.body;
     if (arguments[0].includes("@")) {
         var regs = arguments[0].split("@");
         var strs = arguments[1].split("@");
