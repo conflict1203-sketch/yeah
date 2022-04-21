@@ -1,5 +1,7 @@
 
-re('\"ableToJoin\":false@\"joined\":false','\"ableToJoin\":true@\"joined\":true')
+//re('\"ableToJoin\":false@\"joined\":false','\"ableToJoin\":true@\"joined\":true')
+
+re('false','true')
 
 
 function re() {
