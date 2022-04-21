@@ -168,7 +168,7 @@ function refreshToken() {
     })
 }
 
-function refreshToken() {
+function signIn() {
 
 	return new Promise((resolve, reject) => {
         const t = '签到'
