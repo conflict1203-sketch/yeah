@@ -1,8 +1,7 @@
 
 //re('\"ableToJoin\":false@\"joined\":false','\"ableToJoin\":true@\"joined\":true')
 
-re('false@\"districtForbidden\":true','true@\"districtForbidden\":false')
-re('\"errorCode\":403016','\"errorCode\":0')
+re('false@\"districtForbidden\":true@\"errorCode\":403016','true@\"districtForbidden\":false@\"errorCode\":0')
 
 
 function re() {
