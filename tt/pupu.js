@@ -96,7 +96,7 @@ function getScore() {
             url: 'https://j1.pupuapi.com/client/account/asserts',
             headers: {
                 Authorization: pupuToken,
-                "User-Agent": lk.userAgent
+                "User-Agent": 'Pupumall/2.9.4;iOS 15.4;02164576-F27D-4718-9409-0057C530F18F'
             }
         }
         lk.get(url, (error, response, data) => {
