@@ -80,6 +80,7 @@ async function all() {
         lk.execFail()
         lk.appendNotifyInfo(`⚠️请先打开朴朴获取token`)
     } else {
+    	await refreshToken()
         await signIn()
         await share()
         await getScore()
@@ -125,8 +126,51 @@ function getScore() {
     })
 }
 
-function signIn() {
+
+
+
+function refreshToken() {
     return new Promise((resolve, reject) => {
+        const t = '刷新token'
+        let url = {
+            url: 'https://cauth.pupuapi.com/clientauth/user/refresh_token',
+            headers: {
+                // Authorization: pupuToken,
+                "User-Agent": lk.userAgent
+            }
+            body: {"refresh_token": pupuToken}
+        }
+        lk.put(url, (error, response, data) => {
+            try {
+                if (error) {
+                    lk.execFail()
+                    lk.appendNotifyInfo(`❌${t}失败，请稍后再试`)
+                } else {
+                    data = JSON.parse(data)
+                    if (data.errcode == 0) {
+                        data = data.data
+                        lk.setVal(pupuTokenKey, data['access_token'])
+                        lk.appendNotifyInfo('获取token成功')
+                    } else {
+                        lk.execFail()
+                        lk.appendNotifyInfo(data.errmsg)
+                    }
+                }
+            } catch (e) {
+                lk.logErr(e)
+                lk.log(`朴朴返回数据：${data}`)
+                lk.execFail()
+                lk.appendNotifyInfo(`❌${t}错误，请带上日志联系作者，或稍后再试`)
+            } finally {
+                resolve()
+            }
+        })
+    })
+}
+
+function refreshToken() {
+
+	return new Promise((resolve, reject) => {
         const t = '签到'
         let url = {
             url: 'https://j.pupuapi.com/client/game/sign/v2?city_zip=510100&supplement_id=',
@@ -167,6 +211,7 @@ function signIn() {
             }
         })
     })
+
 }
 
 function share() {
