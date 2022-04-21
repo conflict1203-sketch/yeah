@@ -2,8 +2,7 @@
 
 //re('\"ableToJoin\":false@\"joined\":false','\"ableToJoin\":true@\"joined\":true')
 
-re('\"errorCode\":403016','\"errorCode\":0')
-
+re('false@\"districtForbidden\":true@\"errorCode\":\\d+@\"text\":\"没有购买该课程\"@\"data\":\"\"','true@\"districtForbidden\":false@\"errorCode\":0@\"text\":\"\"@\"data\":{\"status\":true,\"text\":null,\"schema\":null}')
 
 function re() {
     var body = $response.body;
