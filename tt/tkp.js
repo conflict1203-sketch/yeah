@@ -1,7 +1,7 @@
 
 //re('\"ableToJoin\":false@\"joined\":false','\"ableToJoin\":true@\"joined\":true')
 
-re('false','true')
+re('false@\"districtForbidden\":true','true@\"districtForbidden\":false')
 
 
 function re() {
