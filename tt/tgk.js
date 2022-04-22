@@ -1,5 +1,5 @@
 
-re('false','true')
+re('false@\"status\":\\D+.','true@\"status\":0')
 
 function re() {
     var body = $response.body;
