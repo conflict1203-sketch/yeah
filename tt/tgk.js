@@ -1,7 +1,7 @@
 
-// re('false@\"status\":\\D+.','true@\"status\":0')
+re('false@\"status\":\\D+.','true@\"status\":0')
 
-re('\"status\":\\D+.','\"status\":0')
+// re('\"status\":\\D+.','\"status\":0')
 
 function re() {
     var body = $response.body;
