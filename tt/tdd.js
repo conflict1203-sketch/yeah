@@ -1,5 +1,5 @@
 
-re('false@\"c\":\\D+.','true@\"c\":0')
+re('false@\"c\":\\D+.@\"status\":1','true@\"c\":0@\"status\":0')
 
 // re('\"status\":\\D+.','\"status\":0')
 
