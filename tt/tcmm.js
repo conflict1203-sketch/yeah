@@ -1,8 +1,7 @@
 
 
-re('\"display_vip_privilege\":false@\"is_sub\":false@\"vip_overdue_time\":0','\"display_vip_privilege\":true@\"is_sub\":true@\"vip_overdue_time\":1951418898')
-re('\"present_rest_day\":0@\"vip_type\":1@\"is_sub\":false','\"present_rest_day\":360@\"vip_type\":5@\"is_sub\":true')
-re('false','true')
+
+re('false@\"vip_type\":1@"vip_overdue_time\":0','true@\"vip_type\":5@\"vip_overdue_time\":1951418898000')
 
 function re() {
     var body = $response.body;
