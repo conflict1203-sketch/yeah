@@ -1,7 +1,7 @@
 
 
 
-re('false@\"vip_type\":1@"vip_overdue_time\":0','true@\"vip_type\":5@\"vip_overdue_time\":1951418898000')
+re('false@\"vip_type\":1@"vip_overdue_time\":0@\"status\":\"normal\"','true@\"vip_type\":5@\"vip_overdue_time\":1951418898000@\"status\":\"vip\"')
 
 function re() {
     var body = $response.body;
