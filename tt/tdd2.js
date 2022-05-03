@@ -1,10 +1,10 @@
 
+
 // re('false@\"c\":\\D+.@\"status\":1','true@\"c\":0@\"status\":0')
 
 // re('\"status\":\\D+.','\"status\":0')
 
-re('\"is_user_free_try\":false@\"is_read\":false','\"is_user_free_try\":true@\"is_read\":true')
-
+re('\"trial_read_count\":\\d+@\"trial_max_read_count\":\\d+@\"trial_count\":\\d+@\"is_collected\":false','\"trial_read_count\":0@\"trial_max_read_count\":500@\"trial_count\":500@\"is_collected\":true')
 
 
 function re() {
