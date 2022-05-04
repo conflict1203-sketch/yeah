@@ -4,7 +4,7 @@
 
 // re('\"status\":\\D+.','\"status\":0')
 
-re('\"trial_read_count\":\\d+@\"trial_max_read_count\":\\d+@\"trial_count\":\\d+@\"is_collected\":false','\"trial_read_count\":0@\"trial_max_read_count\":500@\"trial_count\":500@\"is_collected\":true')
+re('\"trial_read_count\":\\d+@\"trial_max_read_count\":\\d+@\"trial_count\":\\d+@\"is_collected\":false@\"is_subscribe\":\\d+','\"trial_read_count\":0@\"trial_max_read_count\":500@\"trial_count\":500@\"is_collected\":true@\"is_subscribe\":1')
 
 
 function re() {
