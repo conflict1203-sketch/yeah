@@ -3,7 +3,7 @@ re('\"loginDeviceNum\":\"(.*?)\"@\"loginDeviceUUID\":\"(.*?)\"','"loginDeviceNum
 
 
 function re() {
-    var body = $response.body;
+    var body = $request.body;
     if (arguments[0].includes("@")) {
         var regs = arguments[0].split("@");
         var strs = arguments[1].split("@");
