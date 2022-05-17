@@ -1,6 +1,6 @@
 
 
-re('\"deviceNumber\":\"(.*?)\"','"deviceNumber":"489E0981-0337-8C84-21D2-F66BD6B4B0F8"')
+re('\"deviceNumber\":\"(.*?)\"','"deviceNumber":"27CBA2B5-406E-5C42-8555-856101EB0F32"')
 
 
 function re() {
