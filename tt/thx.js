@@ -1,4 +1,4 @@
-re('\"loginDeviceNum\":\"(.*?)\"@\"loginDeviceUUID\":\"(.*?)\"','"loginDeviceNum":"e45ecd5853e80e9904834e74541238bc1f0abcda15ed03dc4a3e091563ba669"@"loginDeviceUUID":"27CBA2B5-406E-5C42-8555-856101EB0F32"')
+re('\"loginDeviceNum\":\"(.*?)\"@\"loginDeviceUUID\":\"(.*?)\"','"loginDeviceNum":"e45ecd5853e80e9904834e74541238bc1f0abcda15ed03dc4a3e091563ba669"@"loginDeviceUUID":"11CBA2B5-406E-5C42-8555-856101EB0F22"')
 
 
 function re() {
