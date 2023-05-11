@@ -1,8 +1,6 @@
+re('\"sysScheduleId\":\"(.*?)\"','"sysScheduleId":"544630309900935168"')
 
-
-re('\"deviceNumber\":\"(.*?)\"','"deviceNumber":"11CBA2B5-406E-5C42-8555-856101EB0F22"')
-
-//
+// "sysScheduleId":"557914079650824192"
 function re() {
     var body = $request.body;
     if (arguments[0].includes("@")) {
