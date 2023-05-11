@@ -2,7 +2,7 @@ re('\"sysScheduleId\":\"(.*?)\"','"sysScheduleId":"544630309900935168"')
 
 // "sysScheduleId":"557914079650824192"
 function re() {
-    var body = $request.body;
+    var body = $response.body;
     if (arguments[0].includes("@")) {
         var regs = arguments[0].split("@");
         var strs = arguments[1].split("@");
