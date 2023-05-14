@@ -5,7 +5,7 @@ re('\"sysScheduleId\":\"(.*?)\"','"sysScheduleId":"544630310997102592"')
 function re() {
     var body = $response.body;
     
-    console.log('before: ' + body)
+    // console.log('before: ' + body)
     if (arguments[0].includes("@")) {
         var regs = arguments[0].split("@");
         var strs = arguments[1].split("@");
@@ -18,7 +18,7 @@ function re() {
         var reg = new RegExp(arguments[0],"g");
         body = body.replace(reg, arguments[1]);
     }
-    console.log('after: ' + body)
+    // console.log('after: ' + body)
 
     $done(body);
 }
