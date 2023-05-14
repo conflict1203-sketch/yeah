@@ -40,9 +40,7 @@ const myRequest = {
 
 $task.fetch(myRequest).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
-    $done();
 }, reason => {
     console.log(reason.error);
-    $done();
 });
 $done($response.body);
