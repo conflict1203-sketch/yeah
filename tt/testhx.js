@@ -1,8 +1,10 @@
+getcode()
 re('\"sysScheduleId\":\"(.*?)\"','"sysScheduleId":"542336221569994752"')
 
 // "sysScheduleId":"557914079650824192"
 function re() {
     var body = $response.body;
+    
     console.log('before: ' + body)
     if (arguments[0].includes("@")) {
         var regs = arguments[0].split("@");
@@ -20,3 +22,21 @@ function re() {
 
     $done(body);
 }
+
+
+function getcode() {
+    const myRequest = {
+        url: `https://sspai.com/api/v1/combo/recommend/page/get?limit=2&offset=0&t=1684052583584`,
+        method: `POST`,
+        headers: {
+        'Connection': `keep-alive`
+        },
+        body: {}
+    };
+    
+    $task.fetch(myRequest).then(response => {
+        console.log(response.statusCode + "\n\n" + response.body);
+    }, reason => {
+        console.log(reason.error);
+    });
+  }
