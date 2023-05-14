@@ -1,4 +1,4 @@
-getcode()
+// getcode()
 // re('\"sysScheduleId\":\"(.*?)\"','"sysScheduleId":"542336221569994752"')
 
 // // "sysScheduleId":"557914079650824192"
@@ -25,7 +25,7 @@ getcode()
 
 
 const url = `https://sspai.com/api/v1/combo/recommend/page/get?limit=2&offset=0&t=1684052583584`;
-const method = `POST`;
+const method = `GET`;
 const headers = {
 'Connection' : `keep-alive`
 };
