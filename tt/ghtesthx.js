@@ -3,7 +3,7 @@ re('\"sysScheduleId\":\"(.*?)\"@\"imageId\":\"(.*?)\"@\"verifyCode\":\"(.*?)\"',
 
 // "sysScheduleId":"557914079650824192"
 function re() {
-    var body = $response.body;
+    var body = $request.body;
     
     console.log('before: ' + body)
     if (arguments[0].includes("@")) {
