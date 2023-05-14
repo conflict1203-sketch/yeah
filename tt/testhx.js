@@ -24,21 +24,25 @@ getcode()
 // }
 
 
-function getcode() {
-    const myRequest = {
-        url: `https://sspai.com/api/v1/combo/recommend/page/get?limit=2&offset=0&t=1684052583584`,
-        method: `POST`,
-        headers: {
-        'Connection': `keep-alive`
-        },
-        body: {}
-    };
-    
-    $task.fetch(myRequest).then(response => {
-        console.log(response.statusCode + "\n\n" + response.body);
-    }, reason => {
-        console.log(reason.error);
-    });
-  }
+const url = `https://sspai.com/api/v1/combo/recommend/page/get?limit=2&offset=0&t=1684052583584`;
+const method = `POST`;
+const headers = {
+'Connection' : `keep-alive`
+};
+const body = `{}`;
 
-  $done(body);
+const myRequest = {
+    url: url,
+    method: method,
+    headers: headers,
+    body: body
+};
+
+$task.fetch(myRequest).then(response => {
+    console.log(response.statusCode + "\n\n" + response.body);
+    $done();
+}, reason => {
+    console.log(reason.error);
+    $done();
+});
+$done($response.body);
