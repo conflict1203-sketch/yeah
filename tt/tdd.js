@@ -3,7 +3,7 @@
 
 // re('\"status\":\\D+.','\"status\":0')
 
-re('\"is_user_free_try\":false@\"is_read\":false@\"is_subscribe\":0@\"user_type\":\"B\"','\"is_user_free_try\":true@\"is_read\":true@\"is_subscribe\":1@\"user_type\":\"\"')
+re('\"is_free_try\":false@\"is_read\":false@\"is_subscribe\":0@\"user_type\":\"B\"','\"is_free_try\":true@\"is_read\":true@\"is_subscribe\":1@\"user_type\":\"\"')
 
 
 
