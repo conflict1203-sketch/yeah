@@ -3,12 +3,13 @@
 
 // re('\"status\":\\D+.','\"status\":0')
 
-re('\"is_user_free_try\":false@\"is_read\":false','\"is_user_free_try\":true@\"is_read\":true')
+re('\"is_user_free_try\":false@\"is_read\":false@\"is_subscribe\":0@\"user_type\":\"B\"','\"is_user_free_try\":true@\"is_read\":true@\"is_subscribe\":1@\"user_type\":\"\"')
 
 
 
 function re() {
     var body = $response.body;
+    console.log("hello world")
     if (arguments[0].includes("@")) {
         var regs = arguments[0].split("@");
         var strs = arguments[1].split("@");
