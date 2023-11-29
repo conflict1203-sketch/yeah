@@ -1,5 +1,5 @@
 # IDEA, update on 2023.11.29
-# HOST,api.app.prod.grazie.aws.intellij.net,Jetbrains
+HOST,api.app.prod.grazie.aws.intellij.net,Jetbrains
 HOST-SUFFIX,datalore.io,Jetbrains
 HOST-SUFFIX,grazie.ai,Jetbrains
 HOST-SUFFIX,intellij.com,Jetbrains
