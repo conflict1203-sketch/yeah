@@ -1,6 +1,6 @@
 
 /*
-爱奇艺会员签到脚本
+会员签到脚本
 
 更新时间: 2022.2.7
 脚本兼容: QuantumultX, Surge4, Loon, JsBox, Node.js
@@ -36,7 +36,7 @@ var barkServer = ''; //Bark APP 通知服务端地址(默认官方)
  QuantumultX 远程脚本配置:
  **********************
  [task_local]
- # 爱奇艺会员签到
+ # 会员签到
  0 9 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
  [rewrite_local]
@@ -50,9 +50,9 @@ var barkServer = ''; //Bark APP 通知服务端地址(默认官方)
  Surge 4.2.0+ 脚本配置:
  **********************
  [Script]
- 爱奇艺签到 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+ 签到 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
- 爱奇艺获取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+ 获取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
  [MITM]
  hostname= passport.iqiyi.com
@@ -62,7 +62,7 @@ var barkServer = ''; //Bark APP 通知服务端地址(默认官方)
  ************************
 
  [Script]
- # 爱奇艺签到
+ # 签到
  cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
  # 获取Cookie
@@ -123,14 +123,14 @@ var $nobyda = nobyda();
                 }
             }
             const expires = $nobyda.expire ? $nobyda.expire.replace(/\u5230\u671f/, "") : "获取失败 ⚠️"
-            if (!$nobyda.isNode) $nobyda.notify("爱奇艺", "到期时间: " + expires, pushMsg.join('\n'));
-            if (barkKey) await BarkNotify($nobyda, barkKey, '爱奇艺', `到期时间: ${expires}\n${pushMsg.join('\n')}`, barkServer);
+            if (!$nobyda.isNode) $nobyda.notify("", "到期时间: " + expires, pushMsg.join('\n'));
+            if (barkKey) await BarkNotify($nobyda, barkKey, '', `到期时间: ${expires}\n${pushMsg.join('\n')}`, barkServer);
             await $nobyda.time();
         } else {
             console.log(`Cookie缺少关键值，需重新获取`)
         }
     } else {
-        $nobyda.notify("爱奇艺会员", "", "签到终止, 未获取Cookie");
+        $nobyda.notify("会员", "", "签到终止, 未获取Cookie");
     }
 })().finally(() => {
     $nobyda.done();
@@ -149,9 +149,9 @@ function login() {
             const Details = LogDetails ? data ? `response:\n${data}` : '' : ''
             if (!error && data.match(/\"text\":\"\d.+?\u5230\u671f\"/)) {
                 $nobyda.expire = data.match(/\"text\":\"(\d.+?\u5230\u671f)\"/)[1]
-                console.log(`爱奇艺-查询成功: ${$nobyda.expire} ${Details}`)
+                console.log(`-查询成功: ${$nobyda.expire} ${Details}`)
             } else {
-                console.log(`爱奇艺-查询失败${error || ': 无到期数据 ⚠️'} ${Details}`)
+                console.log(`-查询失败${error || ': 无到期数据 ⚠️'} ${Details}`)
             }
             resolve()
         })
@@ -231,7 +231,7 @@ function Checkin() {
                 CheckinMsg = `应用签到: ${e.message||e}`;
             }
             pushMsg.push(CheckinMsg);
-            console.log(`爱奇艺-${CheckinMsg} ${Details}`);
+            console.log(`-${CheckinMsg} ${Details}`);
             resolve()
         })
     })
@@ -284,7 +284,7 @@ function WebCheckin() {
                 WebCheckinMsg = `网页签到: ${e.message || e}`;
             }
             pushMsg.push(WebCheckinMsg);
-            console.log(`爱奇艺-${WebCheckinMsg} ${Details}`);
+            console.log(`-${WebCheckinMsg} ${Details}`);
             resolve()
         })
     })
@@ -313,7 +313,7 @@ function Lottery(s) {
             } catch (e) {
                 LotteryMsg = `应用抽奖: ${e.message || e}`;
             }
-            console.log(`爱奇艺-${LotteryMsg} (${s+1}) ${Details}`)
+            console.log(`-${LotteryMsg} (${s+1}) ${Details}`)
             pushMsg.push(LotteryMsg)
             if (!$nobyda.last) {
                 resolve(1)
@@ -349,7 +349,7 @@ function getTaskList(task) {
             } catch (e) {
                 taskListMsg = `${e.message||e} ‼️`;
             }
-            console.log(`爱奇艺-任务列表: ${taskListMsg} ${Details}`)
+            console.log(`-任务列表: ${taskListMsg} ${Details}`)
             resolve(taskList)
         })
     })
@@ -366,7 +366,7 @@ function joinTask(task) {
             } catch (e) {
                 joinTaskMsg = `错误 ${e.message||e}`;
             }
-            console.log(`爱奇艺-领取任务: ${task.name} => ${joinTaskMsg} ${Details}`)
+            console.log(`-领取任务: ${task.name} => ${joinTaskMsg} ${Details}`)
             resolve()
         })
     })
@@ -383,7 +383,7 @@ function notifyTask(task) {
             } catch (e) {
                 notifyTaskMsg = e.message || e;
             }
-            console.log(`爱奇艺-开始任务: ${task.name} => ${notifyTaskMsg} ${Details}`)
+            console.log(`-开始任务: ${task.name} => ${notifyTaskMsg} ${Details}`)
             resolve()
         })
     })
@@ -406,7 +406,7 @@ function getTaskRewards(task) {
                 RewardsMsg = `任务奖励: ${e.message||e}`;
             }
             pushMsg.push(RewardsMsg)
-            console.log(`爱奇艺-${RewardsMsg} ${Details}`)
+            console.log(`-${RewardsMsg} ${Details}`)
             resolve()
         })
     })
@@ -414,7 +414,7 @@ function getTaskRewards(task) {
 
 function GetCookie() {
     if (!$request.url.includes("/apis/user/info.action")) {
-        $nobyda.notify(`写入爱奇艺Cookie失败`, "", "请更新脚本配置(URL正则/MITM)");
+        $nobyda.notify(`写入Cookie失败`, "", "请更新脚本配置(URL正则/MITM)");
         return
     }
     var CKA = $request.headers['Cookie'];
@@ -424,20 +424,20 @@ function GetCookie() {
         if (RA != iQIYI) {
             var OldTime = $nobyda.read("CookieQYTime")
             if (!$nobyda.write(iQIYI, "CookieQY")) {
-                $nobyda.notify(`${RA?`更新`:`首次写入`}爱奇艺签到Cookie失败‼️`, "", "")
+                $nobyda.notify(`${RA?`更新`:`首次写入`}签到Cookie失败‼️`, "", "")
             } else {
                 if (!OldTime || OldTime && (Date.now() - OldTime) / 1000 >= 21600) {
                     $nobyda.write(JSON.stringify(Date.now()), "CookieQYTime")
-                    $nobyda.notify(`${RA?`更新`:`首次写入`}爱奇艺签到Cookie成功 🎉`, "", "")
+                    $nobyda.notify(`${RA?`更新`:`首次写入`}签到Cookie成功 🎉`, "", "")
                 } else {
-                    console.log(`\n更新爱奇艺Cookie成功! 🎉\n检测到频繁通知, 已转为输出日志`)
+                    console.log(`\n更新Cookie成功! 🎉\n检测到频繁通知, 已转为输出日志`)
                 }
             }
         } else {
-            console.log("\n爱奇艺-与本机储存Cookie相同, 跳过写入 ⚠️")
+            console.log("\n-与本机储存Cookie相同, 跳过写入 ⚠️")
         }
     } else {
-        $nobyda.notify(`爱奇艺`, "", "写入Cookie失败，关键值缺失 ⚠️")
+        $nobyda.notify(``, "", "写入Cookie失败，关键值缺失 ⚠️")
     }
 }
 
