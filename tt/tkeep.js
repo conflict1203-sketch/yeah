@@ -1,9 +1,9 @@
 /*
 作者：photonmang
 脚本更新：
-2021/4/18 修复因Keep课程调整导致的一直加载问题
+2021/4/18 修复因课程调整导致的一直加载问题
 
-注意：此解锁仅针对Keep版本号6.24-6.27的版本。其他版本的未做适配，后续看心情适配。
+注意：此解锁仅针对版本号6.24-6.27的版本。其他版本的未做适配，后续看心情适配。
 
 智能计划使用说明：请根据自己的训练时间计划，自行安排时间和结束时间。时间设置请自行在startDate和endDate修改开始结束时间。
 
@@ -18,8 +18,8 @@ let url = $request.url;
 let body = $response.body;
 let obj = JSON.parse(body);
 
-const startDate="20200923"; // 训练开始时间
-const endDate="20201115"  //训练结束时间
+const startDate="20240106"; // 训练开始时间
+const endDate="20240330"  //训练结束时间
 
 const path1 = 'dynamic';
 const path2 = 'subject';
