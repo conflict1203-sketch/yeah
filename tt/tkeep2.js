@@ -2,6 +2,8 @@ re('\"buttons\":.*?}]','"buttons":[{"title":"免费开始训练","subTitle":"剩
 
 function re() {
     var body = $response.body;
+    console.log("primeV2: ")
+    console.log(body.indexOf("primeV2") != -1 )
     if (arguments[0].includes("@")) {
         var regs = arguments[0].split("@");
         var strs = arguments[1].split("@");
