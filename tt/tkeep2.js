@@ -14,6 +14,7 @@ function re() {
         var reg = new RegExp(arguments[0],"g");
         body = body.replace(reg, arguments[1]);
     }
-    console.log("primeV2: " + body.indexOf("primeV2") != -1 )
+    console.log("primeV2: ")
+    console.log(body.indexOf("primeV2") != -1 )
     $done(body);
 }
