@@ -14,5 +14,6 @@ function re() {
         var reg = new RegExp(arguments[0],"g");
         body = body.replace(reg, arguments[1]);
     }
+    console.log(body)
     $done(body);
 }
