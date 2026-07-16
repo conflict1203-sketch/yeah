@@ -20,9 +20,9 @@
     let host = $request.headers["Host"] || $request.headers["host"] || "unknown";
     let ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "unknown";
 
-    console.log("[Xnip-Broad] 命中! Host=" + host);
-    console.log("[Xnip-Broad] URL: " + url);
-    console.log("[Xnip-Broad] UA: " + ua);
+    console.error("[Xnip-Broad] 命中! Host=" + host);
+    console.error("[Xnip-Broad] URL: " + url);
+    console.error("[Xnip-Broad] UA: " + ua);
 
     // 检查请求体中是否有 bundle_id
     if ($request.body) {
@@ -30,7 +30,7 @@
         try {
             let d = JSON.parse(body);
             let bid = d.receipt && (d.receipt.bundle_id || d.receipt.Bundle_Id);
-            if (bid) console.log("[Xnip-Broad] Bundle ID in body: " + bid);
+            if (bid) console.error("[Xnip-Broad] Bundle ID in body: " + bid);
         } catch(e) {}
     }
 
