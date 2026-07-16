@@ -5,12 +5,11 @@
  * 如果连这个脚本都没触发，说明 Xnip 完全走本地验证
  * 
  * [rewrite_local]
- * # 广撒网 - 拦截所有 Apple IAP 相关请求
- * ^https?:\/\/(buy|sandbox)\.itunes\.apple\.com\/ url script-request-header xnip-broad-diag.js
- * ^https?:\/\/api\.revenuecat\.com\/ url script-request-header xnip-broad-diag.js
- * ^https?:\/\/api\.adapty\.io\/ url script-request-header xnip-broad-diag.js
- * ^https?:\/\/.*\.apphud\.com\/ url script-request-header xnip-broad-diag.js
- * ^https?:\/\/api\.qonversion\.io\/ url script-request-header xnip-broad-diag.js
+ * ^https?:\/\/(buy|sandbox)\.itunes\.apple\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+ * ^https?:\/\/api\.revenuecat\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+ * ^https?:\/\/api\.adapty\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+ * ^https?:\/\/.*\.apphud\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+ * ^https?:\/\/api\.qonversion\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
  * 
  * [mitm]
  * hostname = buy.itunes.apple.com, sandbox.itunes.apple.com, api.revenuecat.com, api.adapty.io, *.apphud.com, api.qonversion.io
