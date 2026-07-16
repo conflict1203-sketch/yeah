@@ -1,18 +1,18 @@
 /*************************************
- * Xnip 广撒网诊断脚本
- * 
- * 拦截所有 Apple IAP 相关域名，确认 Xnip 到底请求了哪些接口
- * 如果连这个脚本都没触发，说明 Xnip 完全走本地验证
- * 
- * [rewrite_local]
- * ^https?:\/\/(buy|sandbox)\.itunes\.apple\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
- * ^https?:\/\/api\.revenuecat\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
- * ^https?:\/\/api\.adapty\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
- * ^https?:\/\/.*\.apphud\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
- * ^https?:\/\/api\.qonversion\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
- * 
- * [mitm]
- * hostname = buy.itunes.apple.com, sandbox.itunes.apple.com, api.revenuecat.com, api.adapty.io, *.apphud.com, api.qonversion.io
+    Xnip 广撒网诊断脚本
+
+    拦截所有 Apple IAP 相关域名，确认 Xnip 到底请求了哪些接口
+    如果连这个脚本都没触发，说明 Xnip 完全走本地验证
+
+    [rewrite_local]
+    ^https?:\/\/(buy|sandbox)\.itunes\.apple\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+    ^https?:\/\/api\.revenuecat\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+    ^https?:\/\/api\.adapty\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+    ^https?:\/\/.*\.apphud\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+    ^https?:\/\/api\.qonversion\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+
+    [mitm]
+    hostname = buy.itunes.apple.com, sandbox.itunes.apple.com, api.revenuecat.com, api.adapty.io, *.apphud.com, api.qonversion.io
  *************************************/
 
 (function () {
