@@ -95,9 +95,7 @@ let rules = [
 
 // 先用配置查找是否匹配某个规则
 const matched = rules.find(rule =>
-    $.log('匹配规则:', rule.name);
-    $.log('匹配规则:',  url);
-    rule.domains.some(domain => url.includes(domain); $.log('匹配结果：' + domain => url.includes(domain)))
+    rule.domains.some(domain => url.includes(domain);)
 );
 
 $.log('匹配:', matched);
