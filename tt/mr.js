@@ -95,12 +95,8 @@ let rules = [
 
 // 先用配置查找是否匹配某个规则
 const matched = rules.find(rule =>
-    $.log('匹配规则:', rule.name);
-    $.log('匹配规则:',  url);
     rule.domains.some(domain => url.includes(domain))
 );
-
-$.log('匹配:', matched);
 
 // 用 switch 来处理结果
 switch (true) {
@@ -111,7 +107,16 @@ switch (true) {
     default:
         let $ = new Env('未匹配');
         $.log('未加入匹配:', url.replace(/^https?:\/\//, '').split('/')[0]);
-        $.done({ body });
+//        $.done({ body });
+//        break;
+        name = 'Mr先生',
+        key = [
+            99, 51, 100, 49, 49, 48, 97, 102,
+            52, 54, 54, 97, 48, 53, 56, 100,
+            55, 98, 97, 99, 54, 48, 55, 48,
+            98, 57, 53, 50, 99, 99, 53, 101
+        ];
+        $.log('未加入匹配:', "直接用mr");
         break;
 }
 
