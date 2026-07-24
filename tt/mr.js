@@ -100,6 +100,8 @@ const matched = rules.find(rule =>
     rule.domains.some(domain => url.includes(domain); $.log('匹配结果：' + domain => url.includes(domain)))
 );
 
+$.log('匹配:', matched);
+
 // 用 switch 来处理结果
 switch (true) {
     case !!matched:
