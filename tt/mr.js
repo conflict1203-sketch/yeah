@@ -110,7 +110,7 @@ switch (true) {
         break;
     default:
         let $ = new Env('未匹配');
-        $.log('当前域名未加入匹配:', url.replace(/^https?:\/\//, '').split('/')[0]);
+        $.log('未加入匹配:', url.replace(/^https?:\/\//, '').split('/')[0]);
         $.done({ body });
         break;
 }
