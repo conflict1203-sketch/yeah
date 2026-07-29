@@ -1,0 +1,99 @@
+# OKZ 订阅代理节点列表
+# 获取时间：2026-07-24
+# 订阅地址：https://s-dywrwizazu.cn-shanghai.fcapp.run/okz/sub?token=5f1ca082f98715cfd432dc580a71ffaa
+# ============================================
+
+# Trojan 协议节点
+trojan://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:60194?allowInsecure=1&peer=russia.okzdns.com&sni=russia.okzdns.com&type=tcp#请下载客户端 见教程
+
+# Hysteria2 协议节点
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@hk-aws-25.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#剩余流量:376.33 GB
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@hk-aws-25.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#套餐到期:2028-04-02
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@hk-aws-25.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#直连 1-请尽快下载官方客户端
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@hk-aws-25.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#直连 2 香港
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@JP-AWS-41.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#直连 3 日本
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@HK-AWS-32.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#直连 4 香港
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@HK-AWS-57.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#直连 5 香港
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@HK-AWS-55.hi2026.net:40000/?insure=0&sni=&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D&mport=40000-60000#直连 6 香港
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@SG-AWS-109.hi2026.net:60001/?insure=0&sni=sg-aws-109.hi2026.net#直连 7 新加坡
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@JP-AWS-110.hi2026.net:60001/?insure=0&sni=jp-aws-110.hi2026.net&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D#直连 8 日本
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@jp-aws-111.hi2026.net:60001/?insure=0&sni=jp-aws-111.hi2026.net&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D#直连 9 日本
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@jp-aws-112.hi2026.net:60001/?insure=0&sni=jp-aws-112.hi2026.net&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D#直连 10 日本
+hysteria2://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@sg-aws-113.hi2026.net:60001/?insure=0&sni=sg-aws-113.hi2026.net&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D#直连 11 新加坡
+
+# AnyTLS 协议节点 - 香港专线
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55053/?type=tcp&insecure=0&fp=chrome&sni=hk-aws-53.hi2026.net#HK-专线-1
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55059/?type=tcp&insecure=0&fp=chrome&sni=hk-gc-59.okzdns.com#HK-专线-4
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55061/?type=tcp&insecure=0&fp=chrome&sni=hk-gc-61.okzdns.com#HK-专线-5
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55063/?type=tcp&insecure=0&fp=chrome&sni=hk-gc-63.okzdns.com#HK-专线-6
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55065/?type=tcp&insecure=0&fp=chrome&sni=hk-gc-65.okzdns.com#HK-专线-7
+
+# AnyTLS 协议节点 - 日本专线
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55041/?type=tcp&insecure=1&fp=chrome&sni=impression.biligame.com#JP-专线-2
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55043/?type=tcp&insecure=1&fp=chrome&sni=impression.biligame.com#JP-专线-3
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55045/?type=tcp&insecure=0&fp=chrome&sni=jp-aws-45.hi2026.net#JP-专线-4
+
+# AnyTLS 协议节点 - 香港节点
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50013/?type=tcp&insecure=0&fp=chrome&sni=hk-ak-any-13.hi2026.net#香港 -01
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50015/?type=tcp&insecure=0&fp=chrome&sni=hk-ak-any-15.hi2026.net#香港 -02
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50017/?type=tcp&insecure=0&fp=chrome&sni=hk-ak-any-17.hi2026.net#香港 -03
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50019/?type=tcp&insecure=0&fp=chrome&sni=hk-ak-any-19.hi2026.net#香港 -04
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50021/?type=tcp&insecure=0&fp=chrome&sni=hk-gc-21.okzdns.com#香港 -05
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50023/?type=tcp&insecure=0&fp=chrome&sni=hk-gc-23.okzdns.com#香港 -06
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50025/?type=tcp&insecure=0&fp=chrome&sni=hk-qiu-25.okzdns.com#香港 -07
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50027/?type=tcp&insecure=0&fp=chrome&sni=hk-qiu-27.okzdns.com#香港 -08
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50029/?type=tcp&insecure=0&fp=chrome&sni=hk-qiu-29.okzdns.com#香港 -09
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50031/?type=tcp&insecure=0&fp=chrome&sni=hk-qiu-31.okzdns.com#香港 -10
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50033/?type=tcp&insecure=0&fp=chrome&sni=jp-gc-33.okzdns.com#香港 -11
+
+# AnyTLS 协议节点 - 日本节点
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50035/?type=tcp&insecure=0&fp=chrome&sni=jp-gc-35.okzdns.com#日本 -01
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50037/?type=tcp&insecure=0&fp=chrome&sni=jp-gc-37.okzdns.com#日本 -02
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50039/?type=tcp&insecure=0&fp=chrome&sni=jp-gc-39.okzdns.com#日本 -03
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50041/?type=tcp&insecure=0&fp=chrome&sni=jp-gc-41.okzdns.com#日本 -04
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50041/?type=tcp&insecure=0&fp=chrome&sni=jp-gc-41.okzdns.com#日本 -05
+
+# AnyTLS 协议节点 - 新加坡节点
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50001/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-any-1.hi2026.net#新加坡 -01
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50003/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-any-3.hi2026.net#新加坡 -02
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50005/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-any-5.hi2026.net#新加坡 -03
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50007/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-any-7.hi2026.net#新加坡 -04
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55033/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-33.okzdns.com#新加坡 -05
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55035/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-35.okzdns.com#新加坡 -06
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55037/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-37.okzdns.com#新加坡 -07
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55039/?type=tcp&insecure=0&fp=chrome&sni=sg-hd-39.okzdns.com#新加坡 -08
+
+# AnyTLS 协议节点 - 台湾节点
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55025/?type=tcp&insecure=0&fp=chrome&sni=tw-ln-25.okzdns.com#台湾 -01
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55027/?type=tcp&insecure=0&fp=chrome&sni=tw-pl-27.okzdns.com#台湾 -02
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55029/?type=tcp&insecure=0&fp=chrome&sni=tw-pl-29.okzdns.com#台湾 -03
+
+# AnyTLS 协议节点 - 韩国节点
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55067/?type=tcp&insecure=0&fp=chrome&sni=kr-gc-67.okzdns.com#韩国 -1
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55069/?type=tcp&insecure=0&fp=chrome&sni=kr-ora-69.okzdns.com#韩国 -2
+
+# AnyTLS 协议节点 - 美国节点
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55071/?type=tcp&insecure=0&fp=chrome&sni=usa-bv-71.okzdns.com#美国 -1
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55073/?type=tcp&insecure=0&fp=chrome&sni=usa-bv-73.okzdns.com#美国 -2
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55075/?type=tcp&insecure=0&fp=chrome&sni=usa-bv-75.okzdns.com#美国 -3
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55077/?type=tcp&insecure=0&fp=chrome&sni=usa-bv-77.okzdns.com#美国 -4
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50009/?type=tcp&insecure=0&fp=chrome&sni=us-cc-any-9.hi2026.net#美国 -5
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@bilibili-image-cdn.juhazf.cn:50011/?type=tcp&insecure=0&fp=chrome&sni=us-cc-any-11.hi2026.net#美国 -6
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55115/?type=tcp&insecure=0&fp=chrome&sni=usa-cc-115.okzdns.com#美国 -7
+
+# AnyTLS 协议节点 - 英国节点
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55079/?type=tcp&insecure=0&fp=chrome&sni=eu-gc-79.okzdns.com#英国 -1
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55081/?type=tcp&insecure=0&fp=chrome&sni=eu-gc-81.okzdns.com#英国 -2
+
+# AnyTLS 协议节点 - 其他地区
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55083/?type=tcp&insecure=0&fp=chrome&sni=adl-nc-83.okzdns.com#澳大利亚
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55085/?type=tcp&insecure=0&fp=chrome&sni=db-ora-85.okzdns.com#迪拜
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55089/?type=tcp&insecure=0&fp=chrome&sni=yn-89.okzdns.com#越南
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55091/?type=tcp&insecure=0&fp=chrome&sni=hl-nc-91.okzdns.com#荷兰
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55093/?type=tcp&insecure=0&fp=chrome&sni=ml-ln-93.okzdns.com#马来西亚
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55095/?type=tcp&insecure=0&fp=chrome&sni=yn-ln-95.okzdns.com#印度尼西亚
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55097/?type=tcp&insecure=0&fp=chrome&sni=tur-ln-97.okzdns.com#土耳其
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55099/?type=tcp&insecure=0&fp=chrome&sni=agt-ln-99.okzdns.com#阿根廷
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55101/?type=tcp&insecure=0&fp=chrome&sni=tg-ln-101.okzdns.com#泰国
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55103/?type=tcp&insecure=0&fp=chrome&sni=flb-ln-103.okzdns.com#菲律宾
+anytls://1fbe1af9-1c91-4780-9e1f-fdfd1c3b81bb@Bilibili-image-cdn.juhazf.cn:55105/?type=tcp&insecure=0&fp=chrome&sni=rus-105.okzdns.com#俄罗斯
