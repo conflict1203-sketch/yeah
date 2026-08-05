@@ -6,10 +6,16 @@ function main() {
     var body = $response.body;
     
     // 将所有装备品质升级到最高级 5（先处理复杂结构）
-    // 找到 "wf" 键，然后手动匹配对应的数组
+    // 生成 1-37 的所有装备槽位，品质全部为 5
+    var newWfItems = [];
+    for (var i = 1; i <= 37; i++) {
+        newWfItems.push("[" + i + ",5]");
+    }
+    var newWfArray = newWfItems.join(', ');
+    
+    // 找到 "wf" 键，然后替换整个 wf 数组
     var wfIndex = body.indexOf('"wf"');
     if (wfIndex !== -1) {
-        // 从 [ 开始位置
         var arrayStart = body.indexOf('[', wfIndex);
         if (arrayStart !== -1) {
             // 使用深度计数器找到匹配的 ]
@@ -24,18 +30,8 @@ function main() {
                 i++;
             }
             
-            var wfContent = body.substring(arrayStart + 1, i);  // 去掉外层 []
-            var items = wfContent.match(/\[\s*\d+\s*,\s*\d+\s*\]/g);
-            
-            if (items) {
-                var newItems = items.map(function(item) {
-                    var arr = item.match(/\d+/g).map(Number);
-                    return "[" + arr[0] + ",5]";
-                });
-                
-                var newArray = newItems.join(', ');
-                body = body.substring(0, arrayStart + 1) + newArray + body.substring(i);
-            }
+            // 替换整个 wf 数组内容
+            body = body.substring(0, arrayStart + 1) + newWfArray + body.substring(i);
         }
     }
     
