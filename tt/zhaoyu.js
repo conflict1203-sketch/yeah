@@ -5,25 +5,34 @@ main();
 function main() {
     var body = $response.body;
     
+    // 将所有装备品质升级到最高级 5（先处理复杂结构）
+    var regWf = /"wf"\s*:\s*\[([\s\S]*?)\]/g;
+    body = body.replace(regWf, function(match, wfContent) {
+        var items = wfContent.match(/\[\s*\d+\s*,\s*\d+\s*\]/g);
+        if (!items) return match;
+        
+        var newItems = items.map(function(item) {
+            var arr = item.match(/\d+/g).map(Number);
+            return "[" + arr[0] + ",5]";
+        });
+        return '"wf": [' + newItems.join(', ') + ']';
+    });
+    
     // 修改钻石数量
-    var reg1 = /"gd":\d+/g;
-    body = body.replace(reg1, '"gd":1686');
+    var regGd = /"gd"\s*:\s*\d+/g;
+    body = body.replace(regGd, '"gd": 1686');
     
     // 修改体力值
-    var reg2 = /"sm":\d+/g;
-    body = body.replace(reg2, '"sm":30');
+    var regSm = /"sm"\s*:\s*\d+/g;
+    body = body.replace(regSm, '"sm": 30');
     
     // 修改金币数量
-    var reg3 = /"cs":\d+/g;
-    body = body.replace(reg3, '"cs":286');
+    var regCs = /"cs"\s*:\s*\d+/g;
+    body = body.replace(regCs, '"cs": 286');
     
     // 解锁所有头像（将 aul 数组全部改成 1）
-    var reg4 = /"aul":\[[^\]]+\]/g;
-    body = body.replace(reg4, '"aul":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]');
-    
-    // 将所有装备品质升级到最高级 5
-    var reg5 = /"wf":\[[^\]]+\]/g;
-    body = body.replace(reg5, '"wf":[[2,5],[22,5],[32,5],[21,5],[23,5],[14,5],[3,5],[35,5],[13,5],[34,5],[26,5],[37,5],[16,5],[27,5],[28,5],[8,5],[19,5],[7,5],[30,5]]');
+    var regAul = /"aul"\s*:\s*\[[\s\S]*?\]/g;
+    body = body.replace(regAul, '"aul": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]');
     
     $done(body);
 }
