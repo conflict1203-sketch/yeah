@@ -43,7 +43,7 @@ function main() {
             var defaultItems = [];
             var ids = [17, 10, 24, 21, 13, 19, 22];
             for (var j = 0; j < ids.length; j++) {
-                defaultItems.push("[" + ids[j] + ", 5, " + serverTime + "]");
+                defaultItems.push("[" + ids[j] + ", 3, " + serverTime + "]");
             }
             var newArray = defaultItems.join(', ');
             body = body.substring(0, arrayStart + 1) + newArray + body.substring(i);
@@ -90,7 +90,7 @@ function main() {
 
         // 修改金币数量
         var regCs = /"cs"\s*:\s*\d+/g;
-        body = body.replace(regCs, '"cs": 187');
+        body = body.replace(regCs, '"cs": 289');
 
         // 解锁所有头像（将 aul 数组全部改成 1）
         var regAul = /"aul"\s*:\s*\[[\s\S]*?\]/g;
