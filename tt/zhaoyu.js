@@ -82,7 +82,7 @@ function main() {
 
         // 修改钻石数量
         var regGd = /"gd"\s*:\s*\d+/g;
-        body = body.replace(regGd, '"gd": 1686');
+        body = body.replace(regGd, '"gd": 6686');
 
         // 修改体力值
         var regSm = /"sm"\s*:\s*\d+/g;
