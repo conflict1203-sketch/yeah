@@ -53,8 +53,8 @@ function main() {
     // 将所有装备品质升级到最高级 5（先处理复杂结构）
         // 生成 1-37 的所有装备槽位，品质全部为 5
         var newWfItems = [];
-        for (var i = 1; i <= 98; i++) {
-            newWfItems.push("[" + i + ",5]");
+        for (var i = 1; i <= 108; i++) {
+            newWfItems.push("[" + i + ",10]");
         }
         var newWfArray = newWfItems.join(', ');
 
