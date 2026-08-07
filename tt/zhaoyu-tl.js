@@ -41,7 +41,7 @@ function main() {
             
             // 统一替换为默认的 7 条记录
             var defaultItems = [];
-            var ids = [17, 10, 24, 21, 13, 19, 22, 23];
+            var ids = [17, 10, 24, 21, 13, 19, 22];
             for (var j = 0; j < ids.length; j++) {
                 defaultItems.push("[" + ids[j] + ", 5, " + serverTime + "]");
             }
