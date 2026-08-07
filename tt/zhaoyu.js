@@ -43,7 +43,7 @@ function main() {
             var defaultItems = [];
             var ids = [17, 10, 24, 21, 13, 19, 22];
             for (var j = 0; j < ids.length; j++) {
-                defaultItems.push("[" + ids[j] + ", 1, " + serverTime + "]");
+                defaultItems.push("[" + ids[j] + ", 5, " + serverTime + "]");
             }
             var newArray = defaultItems.join(', ');
             body = body.substring(0, arrayStart + 1) + newArray + body.substring(i);
