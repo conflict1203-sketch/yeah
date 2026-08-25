@@ -1,5 +1,5 @@
 
-re('pending@\"error\":\\D+.','success@\"error\":0')
+re('pending@recharge','success@recharge')
 // re('\"free\":false@\"error\":\\D+.','\"free\":true@\"error\":0')
 
 
