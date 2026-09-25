@@ -103,7 +103,10 @@ function main() {
             return '"eq": [' + newContent + ']';
         });
 
-    
+        // 增加3个武将 12, 13, 14 到 mg 编队
+        var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
+        body = body.replace(regMg, '"mg": [4, 9, 1, 2, 10, 3, 0, 5, 7, 8, 11, 6, 12, 13, 14]');
+
     $done(body);
 }
 
