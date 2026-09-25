@@ -105,7 +105,7 @@ function main() {
 
         // mg 编队扩展到100个武将
         var mgItems = [];
-        for (var k = 0; k < 100; k++) {
+        for (var k = 0; k < 50; k++) {
             mgItems.push(k);
         }
         var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
