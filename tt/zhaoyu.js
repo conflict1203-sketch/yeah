@@ -96,6 +96,13 @@ function main() {
         var regAul = /"aul"\s*:\s*\[[\s\S]*?\]/g;
         body = body.replace(regAul, '"aul": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]');
 
+        // 将 eq 字段中的 -1 替换为 0
+        var regEq = /"eq"\s*:\s*\[([\s\S]*?)\]/g;
+        body = body.replace(regEq, function(match, eqContent) {
+            var newContent = eqContent.replace(/-1/g, '0');
+            return '"eq": [' + newContent + ']';
+        });
+
     
     $done(body);
 }
