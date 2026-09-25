@@ -53,8 +53,8 @@ function main() {
     // 将所有装备品质升级到最高级 5（先处理复杂结构）
         // 生成 1-37 的所有装备槽位，品质全部为 5
         var newWfItems = [];
-        for (var i = 1; i <= 888; i++) {
-            newWfItems.push("[" + i + ",10]");
+        for (var i = 1; i <= 388; i++) {
+            newWfItems.push("[" + i + ",100]");
         }
         var newWfArray = newWfItems.join(', ');
 
@@ -82,7 +82,7 @@ function main() {
 
         // 修改钻石数量
         var regGd = /"gd"\s*:\s*\d+/g;
-        body = body.replace(regGd, '"gd": 6686');
+        body = body.replace(regGd, '"gd": 6688');
 
         // 修改体力值
         var regSm = /"sm"\s*:\s*\d+/g;
@@ -94,7 +94,7 @@ function main() {
 
         // 解锁所有头像（将 aul 数组全部改成 1）
         var regAul = /"aul"\s*:\s*\[[\s\S]*?\]/g;
-        body = body.replace(regAul, '"aul": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]');
+        body = body.replace(regAul, '"aul": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]');
 
         // 将 eq 字段中的 -1 替换为 0
         var regEq = /"eq"\s*:\s*\[([\s\S]*?)\]/g;
@@ -112,6 +112,10 @@ function main() {
         body = body.replace(/"ssc"\s*:\s*\d+/g, '"ssc": 2');
         body = body.replace(/"apsc"\s*:\s*\d+/g, '"apsc": 3');
         body = body.replace(/"fds"\s*:\s*\d+/g, '"fds": 4');
+
+        body = body.replace(/"ss"\s*:\s*\d+/g, '"ss": 5');
+        body = body.replace(/"lst"\s*:\s*\d+/g, '"lst": 5');
+        body = body.replace(/"rr"\s*:\s*\d+/g, '"rr": 5');
 
     $done(body);
 }
