@@ -53,7 +53,7 @@ function main() {
     // 将所有装备品质升级到最高级 5（先处理复杂结构）
         // 生成 1-37 的所有装备槽位，品质全部为 5
         var newWfItems = [];
-        for (var i = 1; i <= 888; i++) {
+        for (var i = 1; i <= 208; i++) {
             newWfItems.push("[" + i + ",10]");
         }
         var newWfArray = newWfItems.join(', ');
@@ -106,6 +106,12 @@ function main() {
         // 增加3个武将 12, 13, 14 到 mg 编队
         var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
         body = body.replace(regMg, '"mg": [4, 9, 1, 2, 10, 3, 0, 5, 7, 8, 11, 6, 12, 13, 14]');
+
+        // 碎片字段
+        body = body.replace(/"sac"\s*:\s*\d+/g, '"sac": 1');
+        body = body.replace(/"ssc"\s*:\s*\d+/g, '"ssc": 2');
+        body = body.replace(/"apsc"\s*:\s*\d+/g, '"apsc": 3');
+        body = body.replace(/"fds"\s*:\s*\d+/g, '"fds": 4');
 
     $done(body);
 }
