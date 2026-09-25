@@ -53,7 +53,7 @@ function main() {
     // 将所有装备品质升级到最高级 5（先处理复杂结构）
         // 生成 1-37 的所有装备槽位，品质全部为 5
         var newWfItems = [];
-        for (var i = 1; i <= 888; i++) {
+        for (var i = 1; i <= 208; i++) {
             newWfItems.push("[" + i + ",10]");
         }
         var newWfArray = newWfItems.join(', ');
@@ -99,7 +99,7 @@ function main() {
         // 将 eq 字段中的 -1 替换为 0
         var regEq = /"eq"\s*:\s*\[([\s\S]*?)\]/g;
         body = body.replace(regEq, function(match, eqContent) {
-            var newContent = eqContent.replace(/-1/g, '0');
+            var newContent = eqContent.replace(/-1/g, '5');
             return '"eq": [' + newContent + ']';
         });
 
