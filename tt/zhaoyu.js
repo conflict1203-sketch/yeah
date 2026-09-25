@@ -103,9 +103,13 @@ function main() {
             return '"eq": [' + newContent + ']';
         });
 
-        // 增加3个武将 12, 13, 14 到 mg 编队
+        // mg 编队扩展到100个武将
+        var mgItems = [];
+        for (var k = 0; k < 100; k++) {
+            mgItems.push(k);
+        }
         var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
-        body = body.replace(regMg, '"mg": [4, 9, 1, 2, 10, 3, 0, 5, 7, 8, 11, 6, 12, 13, 14]');
+        body = body.replace(regMg, '"mg": [' + mgItems.join(', ') + ']');
 
         // 碎片字段
         body = body.replace(/"sac"\s*:\s*\d+/g, '"sac": 1');
