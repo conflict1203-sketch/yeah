@@ -21,9 +21,9 @@ external/ddgksf2013/scripts/
 ```conf
 [filter_remote]
 # ddgksf2013 去广告规则（本地化版本）
-https://gitlab.com/conflict1203/QuantumultX/-/raw/master/external/ddgksf2013/scripts/youtube.ads.conf, tag=youtube-ads, enabled=true
-https://gitlab.com/conflict1203/QuantumultX/-/raw/master/external/ddgksf2013/scripts/bilibili_comics_ads.conf, tag=bilibili-comics, enabled=false
-https://gitlab.com/conflict1203/QuantumultX/-/raw/master/external/ddgksf2013/scripts/douban.conf, tag=douban, enabled=false
+https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/external/ddgksf2013/scripts/youtube.ads.conf, tag=youtube-ads, enabled=true
+https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/external/ddgksf2013/scripts/bilibili_comics_ads.conf, tag=bilibili-comics, enabled=false
+https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/external/ddgksf2013/scripts/douban.conf, tag=douban, enabled=false
 ```
 
 **或者直接用本地路径**:

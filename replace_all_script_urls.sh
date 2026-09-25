@@ -2,7 +2,7 @@
 # 批量替换所有 url script 中的 GitHub URL 为 GitLab URL
 
 SCRIPTS_DIR="/Users/apple/Documents/workspace/hzero-3/QuantumultX/external/ddgksf2013/scripts"
-GITLAB_BASE="https://gitlab.com/conflict1203/QuantumultX/-/raw/master/external/ddgksf2013/js"
+GITLAB_BASE="https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/external/ddgksf2013/js"
 
 echo "=== 批量替换 url script 引用的 GitHub URL ==="
 

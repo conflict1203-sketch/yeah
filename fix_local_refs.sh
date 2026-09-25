@@ -3,7 +3,7 @@
 
 BASE_DIR="/Users/apple/Documents/workspace/hzero-3/QuantumultX"
 SCRIPTS_DIR="$BASE_DIR/external/ddgksf2013/scripts"
-GITLAB_BASE="https://gitlab.com/conflict1203/QuantumultX/-/raw/master/external/ddgksf2013"
+GITLAB_BASE="https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/external/ddgksf2013"
 
 echo "=== 更新 JS 引用为 GitLab 路径 ==="
 

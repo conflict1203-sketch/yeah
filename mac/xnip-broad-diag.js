@@ -5,11 +5,11 @@
     如果连这个脚本都没触发，说明 Xnip 完全走本地验证
 
     [rewrite_local]
-    ^https?:\/\/(buy|sandbox)\.itunes\.apple\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
-    ^https?:\/\/api\.revenuecat\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
-    ^https?:\/\/api\.adapty\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
-    ^https?:\/\/.*\.apphud\.com\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
-    ^https?:\/\/api\.qonversion\.io\/ url script-request-header https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-broad-diag.js
+    ^https?:\/\/(buy|sandbox)\.itunes\.apple\.com\/ url script-request-header https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/mac/xnip-broad-diag.js
+    ^https?:\/\/api\.revenuecat\.com\/ url script-request-header https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/mac/xnip-broad-diag.js
+    ^https?:\/\/api\.adapty\.io\/ url script-request-header https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/mac/xnip-broad-diag.js
+    ^https?:\/\/.*\.apphud\.com\/ url script-request-header https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/mac/xnip-broad-diag.js
+    ^https?:\/\/api\.qonversion\.io\/ url script-request-header https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/mac/xnip-broad-diag.js
 
     [mitm]
     hostname = buy.itunes.apple.com, sandbox.itunes.apple.com, api.revenuecat.com, api.adapty.io, *.apphud.com, api.qonversion.io

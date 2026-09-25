@@ -11,7 +11,7 @@
  * 基于 chxm1023/Rewrite iTunes.js 改写
  * 
  * [rewrite_local]
- * ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://gitlab.com/conflict1203/QuantumultX/-/raw/master/mac/xnip-unlock.js
+ * ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/conflict1203-sketch/yeah/refs/heads/master/mac/xnip-unlock.js
  * 
  * [mitm]
  * hostname = buy.itunes.apple.com
