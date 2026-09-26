@@ -96,12 +96,24 @@ function main() {
         var regAul = /"aul"\s*:\s*\[[\s\S]*?\]/g;
         body = body.replace(regAul, '"aul": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]');
 
-        // 将 eq 字段中的 -1 替换为 0
-//        var regEq = /"eq"\s*:\s*\[([\s\S]*?)\]/g;
-//        body = body.replace(regEq, function(match, eqContent) {
-//            var newContent = eqContent.replace(/-1/g, '5');
-//            return '"eq": [' + newContent + ']';
-//        });
+//        // 替换 eq 字段
+//        var eqIndex = body.indexOf('"eq"');
+//        if (eqIndex !== -1) {
+//            var arrayStart = body.indexOf('[', eqIndex);
+//            if (arrayStart !== -1) {
+//                var depth = 0;
+//                var i = arrayStart;
+//                while (i < body.length) {
+//                    if (body[i] === '[') depth++;
+//                    else if (body[i] === ']') {
+//                        depth--;
+//                        if (depth === 0) break;
+//                    }
+//                    i++;
+//                }
+//                body = body.substring(0, arrayStart + 1) + '19, 18, 18, 29, 8, 30, 29, 18, 43, 43, 43, 8, -1, -1, -1' + body.substring(i);
+//            }
+//        }
 
 //        // mg 编队扩展到100个武将
 //        var mgItems = [];
