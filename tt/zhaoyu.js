@@ -54,7 +54,7 @@ function main() {
         // 生成 1-37 的所有装备槽位，品质全部为 5
         var newWfItems = [];
         for (var i = 1; i <= 388; i++) {
-            newWfItems.push("[" + i + ",100]");
+            newWfItems.push("[" + i + ",50]");
         }
         var newWfArray = newWfItems.join(', ');
 
@@ -103,13 +103,13 @@ function main() {
 //            return '"eq": [' + newContent + ']';
 //        });
 
-        // mg 编队扩展到100个武将
-        var mgItems = [];
-        for (var k = 0; k < 50; k++) {
-            mgItems.push(k);
-        }
-        var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
-        body = body.replace(regMg, '"mg": [' + mgItems.join(', ') + ']');
+//        // mg 编队扩展到100个武将
+//        var mgItems = [];
+//        for (var k = 0; k < 50; k++) {
+//            mgItems.push(k);
+//        }
+//        var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
+//        body = body.replace(regMg, '"mg": [' + mgItems.join(', ') + ']');
 
 //        // 碎片字段
 //        body = body.replace(/"sac"\s*:\s*\d+/g, '"sac": 1');
