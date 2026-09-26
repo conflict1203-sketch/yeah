@@ -53,8 +53,8 @@ function main() {
     // 将所有装备品质升级到最高级 5（先处理复杂结构）
         // 生成 1-37 的所有装备槽位，品质全部为 5
         var newWfItems = [];
-        for (var i = 1; i <= 208; i++) {
-            newWfItems.push("[" + i + ",10]");
+        for (var i = 1; i <= 388; i++) {
+            newWfItems.push("[" + i + ",50]");
         }
         var newWfArray = newWfItems.join(', ');
 
@@ -82,7 +82,7 @@ function main() {
 
         // 修改钻石数量
         var regGd = /"gd"\s*:\s*\d+/g;
-        body = body.replace(regGd, '"gd": 6686');
+        body = body.replace(regGd, '"gd": 8888');
 
         // 修改体力值
         var regSm = /"sm"\s*:\s*\d+/g;
@@ -94,16 +94,33 @@ function main() {
 
         // 解锁所有头像（将 aul 数组全部改成 1）
         var regAul = /"aul"\s*:\s*\[[\s\S]*?\]/g;
-        body = body.replace(regAul, '"aul": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]');
+        body = body.replace(regAul, '"aul": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]');
 
         // 将 eq 字段中的 -1 替换为 0
-        var regEq = /"eq"\s*:\s*\[([\s\S]*?)\]/g;
-        body = body.replace(regEq, function(match, eqContent) {
-            var newContent = eqContent.replace(/-1/g, '0');
-            return '"eq": [' + newContent + ']';
-        });
+//        var regEq = /"eq"\s*:\s*\[([\s\S]*?)\]/g;
+//        body = body.replace(regEq, function(match, eqContent) {
+//            var newContent = eqContent.replace(/-1/g, '5');
+//            return '"eq": [' + newContent + ']';
+//        });
 
-    
+        // mg 编队扩展到100个武将
+        var mgItems = [];
+        for (var k = 0; k < 50; k++) {
+            mgItems.push(k);
+        }
+        var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
+        body = body.replace(regMg, '"mg": [' + mgItems.join(', ') + ']');
+
+//        // 碎片字段
+//        body = body.replace(/"sac"\s*:\s*\d+/g, '"sac": 1');
+//        body = body.replace(/"ssc"\s*:\s*\d+/g, '"ssc": 2');
+//        body = body.replace(/"apsc"\s*:\s*\d+/g, '"apsc": 3');
+//        body = body.replace(/"fds"\s*:\s*\d+/g, '"fds": 4');
+//
+//        body = body.replace(/"ss"\s*:\s*\d+/g, '"ss": 5');
+//        body = body.replace(/"lst"\s*:\s*\d+/g, '"lst": 5');
+//        body = body.replace(/"rr"\s*:\s*\d+/g, '"rr": 5');
+
     $done(body);
 }
 
