@@ -140,6 +140,25 @@ function main() {
             }
         }
 
+                // 替换 eq 字段
+                var eqIndex = body.indexOf('"eq"');
+                if (eqIndex !== -1) {
+                    var arrayStart = body.indexOf('[', eqIndex);
+                    if (arrayStart !== -1) {
+                        var depth = 0;
+                        var i = arrayStart;
+                        while (i < body.length) {
+                            if (body[i] === '[') depth++;
+                            else if (body[i] === ']') {
+                                depth--;
+                                if (depth === 0) break;
+                            }
+                            i++;
+                        }
+                        body = body.substring(0, arrayStart + 1) + '19, 18, 18, 29, 8, 30, 29, 18, 43, 43, 43, 8, -1, -1, -1' + body.substring(i);
+                    }
+                }
+
     $done(body);
 }
 
