@@ -103,13 +103,13 @@ function main() {
 //            return '"eq": [' + newContent + ']';
 //        });
 
-        // mg 编队扩展到100个武将
-        var mgItems = [];
-        for (var k = 0; k < 50; k++) {
-            mgItems.push(k);
-        }
-        var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
-        body = body.replace(regMg, '"mg": [' + mgItems.join(', ') + ']');
+//        // mg 编队扩展到100个武将
+//        var mgItems = [];
+//        for (var k = 0; k < 50; k++) {
+//            mgItems.push(k);
+//        }
+//        var regMg = /"mg"\s*:\s*\[[\s\S]*?\]/g;
+//        body = body.replace(regMg, '"mg": [' + mgItems.join(', ') + ']');
 
 //        // 碎片字段
 //        body = body.replace(/"sac"\s*:\s*\d+/g, '"sac": 1');
@@ -120,6 +120,25 @@ function main() {
 //        body = body.replace(/"ss"\s*:\s*\d+/g, '"ss": 5');
 //        body = body.replace(/"lst"\s*:\s*\d+/g, '"lst": 5');
 //        body = body.replace(/"rr"\s*:\s*\d+/g, '"rr": 5');
+
+//        // 替换 sgf 字段
+//        var sgfIndex = body.indexOf('"sgf"');
+//        if (sgfIndex !== -1) {
+//            var arrayStart = body.indexOf('[', sgfIndex);
+//            if (arrayStart !== -1) {
+//                var depth = 0;
+//                var i = arrayStart;
+//                while (i < body.length) {
+//                    if (body[i] === '[') depth++;
+//                    else if (body[i] === ']') {
+//                        depth--;
+//                        if (depth === 0) break;
+//                    }
+//                    i++;
+//                }
+//                body = body.substring(0, arrayStart + 1) + '[12, 5], [13, 6], [14, 9]' + body.substring(i);
+//            }
+//        }
 
     $done(body);
 }
